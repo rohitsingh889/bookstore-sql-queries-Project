@@ -4,6 +4,8 @@ This project simulates an **Online Bookstore Database** using **PostgreSQL**.
 It covers **database design, data import, and 22 real-world SQL queries** to perform analysis on books, customers, and orders.  
 
 ---
+![Bookstore_Logo](https://github.com/rohitsingh889/Netflix_SQL-project/blob/main/logo.png)
+
 
 ## 📌 Features
 - Database schema design (**Books, Customers, Orders**)
