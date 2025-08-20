@@ -1,4 +1,4 @@
-
+--first create three tables as follows.....>
 CREATE TABLE Books (
     Book_ID SERIAL PRIMARY KEY,
     Title VARCHAR(100),
@@ -232,3 +232,4 @@ SELECT b.book_id, b.title, b.stock, COALESCE(SUM(o.quantity),0) AS Order_quantit
 FROM books b
 LEFT JOIN orders o ON b.book_id=o.book_id
 GROUP BY b.book_id ORDER BY b.book_id;
+
