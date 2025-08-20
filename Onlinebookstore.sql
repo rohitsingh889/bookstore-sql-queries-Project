@@ -168,7 +168,7 @@ FROM Orders o
 JOIN Books b ON o.book_id = b.book_id
 GROUP BY b.Genre;
 
---Q15Find the average price of books in the "Fantasy" genre.
+
 --Q15 Find the average price of books in the "Fantasy" genre
 SELECT AVG(price) AS avg_price
 FROM Books
@@ -232,4 +232,5 @@ SELECT b.book_id, b.title, b.stock, COALESCE(SUM(o.quantity),0) AS Order_quantit
 FROM books b
 LEFT JOIN orders o ON b.book_id=o.book_id
 GROUP BY b.book_id ORDER BY b.book_id;
+
 
